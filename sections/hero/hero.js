@@ -1,8 +1,8 @@
 const images = [
-  "../../img/hero/1.jpg",
-  "../../img/hero/2.jpg",
-  "../../img/hero/3.jpg",
-  "../../img/hero/4.jpg",
+  "img/hero/1.jpg",
+  "img/hero/2.jpg",
+  "img/hero/3.jpg",
+  "img/hero/4.jpg",
 ];
 
 let index = 0;

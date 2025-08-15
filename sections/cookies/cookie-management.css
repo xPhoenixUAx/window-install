@@ -1,0 +1,74 @@
+/* Cookie management modal styles */
+.cookie-management-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+.cookie-management-modal.active {
+  display: flex;
+}
+.cookie-management-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px 24px 20px 24px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  font-family: inherit;
+}
+.cookie-management-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cookie-management-desc {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+.cookie-management-options {
+  margin-bottom: 18px;
+}
+.cookie-management-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.cookie-management-option label {
+  margin-left: 8px;
+  font-size: 1rem;
+}
+.cookie-management-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.cookie-management-btn {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cookie-management-btn.save {
+  background: #0078d7;
+  color: #fff;
+}
+.cookie-management-btn.save:hover {
+  background: #005fa3;
+}
+.cookie-management-btn.cancel {
+  background: #f3f3f3;
+  color: #333;
+}
+.cookie-management-btn.cancel:hover {
+  background: #e0e0e0;
+}

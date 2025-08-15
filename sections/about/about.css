@@ -1,0 +1,248 @@
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 24px 0;
+  }
+  .about-head {
+    height: 60vh;
+    padding: 10px;
+  }
+  .bg-video {
+    border-radius: 6px;
+  }
+  .about-text {
+    font-size: 1.2rem;
+    top: -30%;
+  }
+  .item-icon {
+    width: 260px;
+  }
+  .item-title {
+    font-size: 1.2rem;
+  }
+  .item-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 10px 0;
+  }
+  .about-head {
+    height: 32vh;
+    padding: 4px;
+  }
+  .bg-video {
+    border-radius: 4px;
+  }
+  .about-text {
+    font-size: 0.98rem;
+    top: -18%;
+  }
+  .item-icon {
+    width: 120px;
+  }
+  .item-title {
+    font-size: 1rem;
+  }
+  .item-text {
+    font-size: 0.95rem;
+  }
+}
+.about-section {
+  padding: 50px 0;
+  /* background-color: #f0f0e7; */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: aboutFadeIn 1.2s ease-out 0.2s forwards;
+}
+
+@keyframes aboutFadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.lead {
+  font-size: 45px;
+  font-weight: 300;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 50px;
+}
+.about-head {
+  padding: 20px;
+  border: 4px solid rgba(255, 255, 255, 2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.about-text {
+  position: relative;
+  text-align: center;
+  top: -40%;
+  transform: translateY(-50%);
+  font-size: 34px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+.item-icon {
+  width: 500px;
+  height: auto;
+  margin-right: 10px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 1.5);
+}
+.about-services {
+  padding-top: 130px;
+}
+.float-img {
+  margin: 0 15px 10px 0; /* відступи, щоб текст не прилипав */
+  width: 500px; /* або потрібний розмір */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s;
+}
+.float-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+.item:nth-child(odd) {
+  flex-direction: row-reverse; /* картинка справа, текст зліва */
+}
+.about-services ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.item {
+  display: flex;
+  flex-direction: row; /* за замовчуванням: картинка ліворуч, текст праворуч */
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border: 4px solid rgba(255, 255, 255, 2);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: itemFadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+.item:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px) scale(1.01);
+}
+@keyframes itemFadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.item:nth-child(odd) {
+  flex-direction: row-reverse; /* картинка справа, текст зліва */
+}
+.item-title {
+  font-size: 32px;
+  color: rgb(42, 42, 42);
+
+  margin: 0 0 10px;
+}
+.item-text {
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgb(42, 42, 42);
+  padding-bottom: 20px;
+}
+.item-list {
+  font-size: large;
+  list-style: none;
+  color: white;
+  padding-left: 40px; /* відступ для списку */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  border-radius: 8px;
+  background-color: #848484;
+  padding: 10px;
+}
+.about-text-bottom {
+  font-size: 24px;
+  color: rgb(42, 42, 42);
+  padding-top: 20px;
+  text-align: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 220px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 30px;
+  color: rgb(42, 42, 42);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 5px rgba(21, 20, 20, 0.5);
+}
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  border-radius: 30px;
+  height: 10px;
+  width: 10px;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+}
+.type1:hover::after {
+  transform: scale(100);
+}
+.btn-txt {
+  font-size: 24px;
+  z-index: 1;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.about-block-bot {
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,37 @@
+/* Floating call button styles */
+.call-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 12000;
+  background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 18px rgba(0, 80, 200, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  font-size: 1.5rem;
+}
+.call-btn:hover {
+  background: linear-gradient(135deg, #005bea 0%, #00c6fb 100%);
+  box-shadow: 0 8px 24px rgba(0, 80, 200, 0.25);
+  transform: scale(1.08);
+}
+.call-btn svg {
+  display: block;
+}
+@media (max-width: 600px) {
+  .call-btn {
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+}

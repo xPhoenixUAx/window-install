@@ -1,0 +1,58 @@
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 98vw;
+    padding: 0 10px;
+  }
+  body {
+    font-size: 1.05rem;
+  }
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Smartphone styles */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 0 4px;
+  }
+  body {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 1.1em;
+  }
+  p,
+  ul,
+  li,
+  a,
+  button {
+    font-size: 1em;
+  }
+  img,
+  video {
+    max-width: 100vw;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
